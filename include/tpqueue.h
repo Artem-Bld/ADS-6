@@ -9,9 +9,10 @@ class TPQueue {
   struct Node {
     T data;
     Node* next;
-    Node(const T& val) : data(val), next(nullptr) {}
+    explicit Node(const T& val) : data(val), next(nullptr) {}
   };
   Node* head;
+
  public:
   TPQueue() : head(nullptr) {}
   ~TPQueue() {
